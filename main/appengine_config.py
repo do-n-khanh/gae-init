@@ -12,6 +12,7 @@ if os.environ.get('SERVER_SOFTWARE', '').startswith('Google App Engine'):
   sys_path_insert('lib.zip')
 else:
   if os.name == 'nt':
+    import ctypes
     os.name = None
     sys.platform = ''
 
